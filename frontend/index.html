@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CodeArena — Onchain Developer Competitions</title>
+<meta name="description" content="Organizations fund coding challenges. Developers ship. Judges score. Escrowed prizes are released on-chain.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%9F%A2%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+<header class="top">
+  <div class="wrap nav">
+    <a class="logo" href="#/">&lt;<b>/</b>&gt; CodeArena</a>
+    <nav id="nav">
+      <a href="#/explore" data-r="explore">Explore</a>
+      <a href="#/leaderboard" data-r="leaderboard">Leaderboard</a>
+      <a href="#/developer" data-r="developer">Developer</a>
+      <a href="#/organizer" data-r="organizer">Organizer</a>
+      <a href="#/judge" data-r="judge">Judge</a>
+      <a href="#/create" data-r="create">Create</a>
+    </nav>
+    <span id="net" class="net"></span>
+    <button id="connect" class="btn primary sm" data-act="connect">Connect wallet</button>
+  </div>
+</header>
+
+<main><div class="wrap" id="view"><div class="loading">booting</div></div></main>
+
+<footer><div class="wrap">CodeArena MVP · judges score, contracts verify &amp; escrow · no backend, no database · <a class="link" href="#/">home</a></div></footer>
+<div id="toasts"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/6.13.4/ethers.umd.min.js"></script>
+<script src="js/config.js"></script>
+<script src="js/abi.js"></script>
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
